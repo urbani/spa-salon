@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1882019C-DF84-40C1-93DD-5FCE38C810E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPA</RootNamespace>
+    <AssemblyName>SPA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Сева\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AB429B38922F6DB1A6F85074159FBC6E8E8F1449</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SPA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCl.Designer.cs">
+      <DependentUpon>AddCl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTime.Designer.cs">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLenTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLenTime.Designer.cs">
+      <DependentUpon>AddLenTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auth.cs" />
+    <Compile Include="BossAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BossAdd.Designer.cs">
+      <DependentUpon>BossAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="spaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spaDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCl.resx">
+      <DependentUpon>AddCl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTime.resx">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLenTime.resx">
+      <DependentUpon>AddLenTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BossAdd.resx">
+      <DependentUpon>BossAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="spaDataSet.xsc">
+      <DependentUpon>spaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="spaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>spaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="spaDataSet.xss">
+      <DependentUpon>spaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SPA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prevarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beatyf2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papierkorb-silbermetallic-g0026ynkhj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\Update1.png" />
+    <None Include="Resources\Wall-clock.png" />
+    <None Include="Resources\Rew-arrows.png" />
+    <None Include="Resources\Del.png" />
+    <None Include="Resources\Ins.png" />
+    <None Include="Resources\Del1.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\code.png" />
+    <None Include="Resources\Rew-arrows1.png" />
+    <None Include="Resources\Fwd-arrows.png" />
+    <None Include="Resources\Personal.png" />
+    <None Include="Resources\start_here.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\Exit_Full_Screen.png" />
+    <None Include="Resources\Exit_Full_Screen1.png" />
+    <None Include="Resources\1378149834_ok.png" />
+    <None Include="Resources\1378149904_cancel.png" />
+    <None Include="Resources\record.png" />
+    <None Include="Resources\record1.png" />
+    <None Include="Resources\1378168604_delete-user.png" />
+    <None Include="Resources\1378168748_edit-notes.png" />
+    <None Include="Resources\1378168836_add-group.png" />
+    <None Include="Resources\1378169739_user-card_blue.png" />
+    <None Include="Resources\1378169655_Magnifier.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\1378177593_add.png" />
+    <None Include="Resources\1378177597_cancel.png" />
+    <None Include="Resources\add-96.png" />
+    <None Include="Resources\add-110.png" />
+    <None Include="Resources\1378224075_description.png" />
+    <None Include="Resources\1378330727_arrows_up_down.gif" />
+    <None Include="Resources\clock2.png" />
+    <None Include="Resources\1380125705_Clock.png" />
+    <None Include="Resources\1380125705_Clock1.png" />
+    <None Include="Resources\1380125830_Personal.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\1380130947_MB__home.png" />
+    <None Include="Resources\1380131276_MB__book.png" />
+    <None Include="Resources\1380158582_MB__navigation.png" />
+    <None Include="Resources\1380130947_MB__home1.png" />
+    <None Include="Resources\1380158582_MB__navigation11.png" />
+    <None Include="Resources\1380158582_MB__navigation111.png" />
+    <None Include="Resources\1380158582_MB__navigation112.png" />
+    <Content Include="spa.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
